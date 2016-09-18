@@ -2,19 +2,28 @@
 <html>
     <head>
         
-          <title>First Post</title>
+          <title>Toeplitz RSS Hash</title>
         
     </head>
     <body>
     <div>
       
         <div>
-  <h2>First Post</h2>
+  <h2>Toeplitz RSS Hash</h2>
   <p>
-    <h1>This is our first Post!</h1>
-<p>Welcome to the first post ever on cobalt.rs!</p>
+    <h3>Symmetrical <a href="https://msdn.microsoft.com/windows/hardware/drivers/network/rss-hashing-functions">RSS</a> using Toeplitz hash function.</h3>
+<p>While playing with some Rust <a href="https://github.com/ndenev/eve-rust">code</a> to parse <a href="https://suricata-ids.org">Suricata</a> EVE Json log events I was thinking about
+calculating and keeping per flow list of events (looks like Suricata flow id fields are not very unique, however this is <a href="https://redmine.openinfosecfoundation.org/issues/1870">changing</a>).
+I found this <a href="http://www.ran-lifshitz.com/2014/08/28/symmetric-rss-receive-side-scaling/">article</a> explaining the RSS Toeplitz hash function and a modification used to allow for
+symmetric hashing: <a href="http://www.ran-lifshitz.com/2014/08/28/symmetric-rss-receive-side-scaling/">Symmetric RSS</a></p>
+<p>Here is also some DragonFlyBSD and FreeBSD code implementing Toeplitz:</p>
+<ul>
+<li><a href="http://bxr.su/DragonFly/sys/net/toeplitz.c">http://bxr.su/DragonFly/sys/net/toeplitz.c</a></li>
+<li><a href="https://github.com/freebsd/freebsd/blob/master/sys/net/toeplitz.c">https://github.com/freebsd/freebsd/blob/master/sys/net/toeplitz.c</a></li>
+</ul>
 
   </p>
+  <a href="/">Back to Index</a>
 </div>
 
       
