@@ -6,15 +6,66 @@
         <style type="text/css">
             body {
                 font-family: 'Ubuntu', sans-serif;
+                text-decoration: none;
+            }
+            p.blocktext {
+                margin-left: 20%;
+                margin-right: 20%;
+                width: 60%; 
+                text-align: justify;
+            }
+            table {
+                background-color: #fafafa;
+                border-radius: 5px;
+                width: 60%;
+                margin: 0 auto;
+            }
+            table tr:hover {
+                background-color: #ddd;
+            }
+            table td, table th {
+                border: 0px solid #999999;
+                text-align: justify;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            div#wrapperHeader {
+                width:100%;
+                height;200px;
+                background:url(/images/blinky.png) repeat-x 0 0;
+                text-align:center;
+            }
+            div#wrapperHeader div#header {
+                width:1000px;
+                height:200px;
+                margin:0 auto;
+                color: white;
+                text-align: center;
+            }
+
+            div#wrapperHeader div#header img {
+                width:; /* the width of the logo image */
+                height:; /* the height of the logo image */
+                margin:0 auto;
             }
         </style>
         {% if is_post %}
-          <title>{{ title }}</title>
+            <title>blog.ndenev.com - {{ title }} - {{ date }}</title>
         {% else %}
-       	  <title>blog.ndenev.com</title>
+              <title>blog.ndenev.com</title>
         {% endif %}
     </head>
     <body>
+    <div id="wrapperHeader">
+         <div id="header">
+            <br/>
+            <h2>blog.ndenev.com</h2>
+            {% if is_post %}
+                <h3>{{ title }}</h3>
+                <h4>{{ date }}</h4>
+            {% endif %}
+        </div> 
+    </div>
     <div>
       {% if is_post %}
         {% include '_layouts/post.liquid' %}
