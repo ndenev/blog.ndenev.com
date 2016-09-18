@@ -4,6 +4,7 @@ description: Random Thoughts about Technology and Networks
 link: https://blog.ndenev.com
 source: "."
 dest: "build"
+post_path: /:year/:month/:day/:short_title
 ignore:
   - .git/*
   - build/*

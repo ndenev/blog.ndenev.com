@@ -1,7 +1,8 @@
 extends: default.liquid
 
 title: Symmetrical RSS hashing using Toeplitz hash.
-date: 18 September 2016
+short_title: toeplitz_hash_rss
+date: 18 September 2016 21:00:30 +0100
 ---
 
 Modern OSes and NICs use hashing based on src/dst port and protocol tuples to identify
