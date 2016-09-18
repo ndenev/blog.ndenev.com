@@ -1,4 +1,7 @@
 name: blog.ndenev.com
+rss: rss.xml
+description: Random Thoughts about Technology and Networks
+link: https://blog.ndenev.com
 source: "."
 dest: "build"
 ignore:
