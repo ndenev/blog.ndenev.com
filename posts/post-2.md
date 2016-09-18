@@ -15,6 +15,9 @@ Here is also some DragonFlyBSD and FreeBSD code implementing Toeplitz:
  * [http://bxr.su/DragonFly/sys/net/toeplitz.c][6]
  * [https://github.com/freebsd/freebsd/blob/master/sys/net/toeplitz.c][7]
 
+P.S.: I wonder why I see DragonFly code implement some sort of caching, while
+FreeBSD code does not.
+
 [1]: https://msdn.microsoft.com/windows/hardware/drivers/network/rss-hashing-functions
 [2]: http://www.ran-lifshitz.com/2014/08/28/symmetric-rss-receive-side-scaling/
 [3]: https://github.com/ndenev/eve-rust
