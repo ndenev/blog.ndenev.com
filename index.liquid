@@ -3,7 +3,7 @@ extends: default.liquid
 <div>
 <table>
 {% for post in posts %}
-    <tr><td><a href="{{post.path}}#disqus_thread" data-disqus-identifier="{{post.path}}">{{ post.title }}</a><br><div id="postDate">{{ post.date }}</div></td></tr>
+    <a href="{{post.path}}#disqus_thread" data-disqus-identifier="{{post.path}}"><tr><td>{{ post.title }}<br><div id="postDate">{{ post.date }}</div></td></tr></a>
 {% endfor %}
 </table>
 </div>
