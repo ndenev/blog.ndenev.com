@@ -3,7 +3,7 @@ extends: default.liquid
 <div>
 <table>
 {% for post in posts %}
-    <tr>
+    <tr class="spaceUnder">
         <td>
             <a href="{{post.path}}">{{ post.title }}<br>
             <div id="postDate">{{ post.date }}</div><br>
