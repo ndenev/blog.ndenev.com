@@ -5,7 +5,7 @@ extends: default.liquid
 {% for post in posts %}
     <tr>
         <td>
-            <a href="{{post.path}}"><tr><td>{{ post.title }}<br>
+            <a href="{{post.path}}">{{ post.title }}<br>
             <div id="postDate">{{ post.date }}</div><br>
             <div class="disqus-comment-count" data-disqus-identifier="{{post.path}}"></div>
             </a>
