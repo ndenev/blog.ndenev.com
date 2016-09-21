@@ -8,7 +8,8 @@
   <script>
   var disqus_config = function () {
       this.page.url = 'https://blog.ndenev.com/{{ path }}';
-      this.page.identifier = '{{ date }} - {{ title }}';
+      this.page.identifier = '{{ path }}';
+      this.page.title = '{{ title }}';
   };
   (function() {
       var d = document, s = d.createElement('script');
