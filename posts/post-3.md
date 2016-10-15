@@ -8,11 +8,11 @@ I recently started preaching here and there about how cool, fast and light [Rust
 Then shortly after I posted this nice [comparison][2] between [Rust][1] and Java by [llogiq@][2],
 my ex-colleague [famzah@][5] asked me if I can contribute a Rust implementation for a benchmark suite
  he's maintaining : [C++ vs. Python vs. PHP vs. Java vs. Others performance benchmark (2016 Q3)][4]
-Agreed, both C++ and Rust implementations in these benchmarks are not the best implementations
-for the respective language, but the idea was to use the exact (or close as possible) algorithm
+Agreed, both C++ and Rust implementations in these benchmarks are not the most efficient and/or idiomatic
+implementations for the respective language, but the idea was to use the exact (or close as possible) algorithm
 as in the original Python version so that we can get an idea of how they perform doing the same thing (in theory).
 I can't say I was surprised to see that in my tests the Rust version outperformed the C++ one.
-[famzah@][5]'s initial report was that also shows that the Rust version consumes muc less memory
+[famzah@][5]'s initial report was that also shows that the Rust version consumes much less memory
 at around 36MB, while the C++ one consumed 55MB.
 
 Given this, I don't know what would be the reason for me to pick C or C++ again :D
