@@ -1,8 +1,7 @@
-extends: default.liquid
-
-title: Hello, World!
-short_title: hello_world
-date: 01 February 2015 21:00:30 +0100
+title: "Hello, World!"
+published_date: "2015-02-01 21:00:30 +0100"
+layout: default.liquid
+data:
+  short_title: hello_world
 ---
-
 Hola, Mundo!

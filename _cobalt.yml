@@ -1,0 +1,34 @@
+source: "."
+destination: build
+include_drafts: false
+default:
+  excerpt_separator: "\n\n"
+  is_draft: false
+pages:
+  default: {}
+posts:
+  title: ~
+  description: ~
+  dir: posts
+  drafts_dir: _drafts
+  order: Desc
+  rss: rss.xml
+  jsonfeed: ~
+  default:
+    permalink: "/:year/:month/:day/:short_title"
+site:
+  title: blog.ndenev.com
+  description: Random Thoughts about Technology and Networks
+  base_url: "https://blog.ndenev.com"
+  data: ~
+template_extensions:
+  - md
+  - liquid
+ignore:
+  - ".git/*"
+  - "build/*"
+syntax_highlight:
+  theme: "base16-ocean.dark"
+assets:
+  sass:
+    style: Nested

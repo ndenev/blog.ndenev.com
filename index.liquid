@@ -1,13 +1,13 @@
-extends: default.liquid
+layout: default.liquid
 ---
 <div>
 <table>
-{% for post in posts %}
+{% for post in collections.posts.pages %}
     <tr class="spaceUnder">
         <td>
-            <a href="{{post.path}}">{{ post.title }}<br>
-            <div id="postDate">{{ post.date }}</div><br>
-            <div class="disqus-comment-count" data-disqus-identifier="{{post.path}}"></div>
+            <a href="{{ post.permalink }}">{{ post.title }}<br>
+            <div id="postDate">{{ post.published_date }}</div><br>
+            <div class="disqus-comment-count" data-disqus-identifier="{{ post.permalink }}"></div>
             </a>
         </td>
     </tr>

@@ -1,9 +1,9 @@
-extends: default.liquid 
 title: Rust takes the crown in this programming language benchmark.
-short_title: rust_benchmark_win
-date: 15 October 2016 23:52:00 +0100
+published_date: "2016-10-15 23:52:00 +0100"
+layout: default.liquid
+data:
+  short_title: rust_benchmark_win
 ---
-
 *Updated on 16 Oct 2016 (added benchmark output)*
 
 I recently started preaching here and there about how cool, fast and light [Rust][1] is.  

@@ -1,10 +1,9 @@
-extends: default.liquid
-
 title: Symmetrical RSS hashing using Toeplitz hash.
-short_title: toeplitz_hash_rss
-date: 18 September 2016 21:00:30 +0100
+published_date: "2016-09-18 21:00:30 +0100"
+layout: default.liquid
+data:
+  short_title: toeplitz_hash_rss
 ---
-
 Modern OSes and NICs use hashing based on src/dst port and protocol tuples to identify
 "flows" so that they can be put on different CPU or NIC queue.
 Doing so improves cache locality and this performance and is what Microsoft (and others),
