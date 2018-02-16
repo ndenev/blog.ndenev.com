@@ -15,7 +15,7 @@ posts:
   rss: rss.xml
   jsonfeed: ~
   default:
-    permalink: "/:year/:month/:day/:short_title"
+    permalink: "/{{year}}/{{month}}/{{day}}/{{data.short_title}}"
 site:
   title: blog.ndenev.com
   description: Random Thoughts about Technology and Networks
@@ -28,7 +28,7 @@ ignore:
   - ".git/*"
   - "build/*"
 syntax_highlight:
-  theme: "base16-ocean.dark"
+  theme: "base16-eighties.dark"
 assets:
   sass:
     style: Nested

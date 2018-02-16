@@ -25,50 +25,57 @@ Here is the raw benchmark output only of the C++ (-O2 optimized) and Rust versio
 # C++ (optimized with -O2)
 # ... compilation
 # ... run 1
-real_TIME:89.26sec user_CPU:73.96sec sys_CPU:7.00sec max_RSS:50596kb swaps:0 ctx_sw:3768+2 nlines:805 run_try:1  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
+real_TIME:89.26sec user_CPU:73.96sec sys_CPU:7.00sec max_RSS:50596kb swaps:0 ctx_sw:3768+2 nlines:805 
+    run_try:1  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cpp
 # ... run 2
-real_TIME:89.99sec user_CPU:74.49sec sys_CPU:7.08sec max_RSS:50400kb swaps:0 ctx_sw:3396+1 nlines:813 run_try:2  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
+real_TIME:89.99sec user_CPU:74.49sec sys_CPU:7.08sec max_RSS:50400kb swaps:0 ctx_sw:3396+1 nlines:813
+    run_try:2  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cpp
 # ... run 3
-real_TIME:89.99sec user_CPU:74.50sec sys_CPU:7.03sec max_RSS:50168kb swaps:0 ctx_sw:2938+1 nlines:807 run_try:3  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
+real_TIME:89.99sec user_CPU:74.50sec sys_CPU:7.03sec max_RSS:50168kb swaps:0 ctx_sw:2938+1 nlines:807
+    run_try:3  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cpp
 # ... run 4
-real_TIME:90.00sec user_CPU:74.42sec sys_CPU:7.18sec max_RSS:51984kb swaps:0 ctx_sw:2673+1 nlines:806 run_try:4  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
-# ... run 5
-real_TIME:89.95sec user_CPU:75.32sec sys_CPU:6.10sec max_RSS:52112kb swaps:0 ctx_sw:2053+1 nlines:808 run_try:5  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
-# ... run 6
-real_TIME:90.06sec user_CPU:75.20sec sys_CPU:6.62sec max_RSS:51240kb swaps:0 ctx_sw:3206+1 nlines:806 run_try:6  header:'C++ (optimized with -O2)' version:'g++
- (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) ' src_file:primes.cpp
-# Rust
+real_TIME:90.00sec user_CPU:74.42sec sys_CPU:7.18sec max_RSS:51984kb swaps:0 ctx_sw:2673+1 nlines:806
+    run_try:4  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cp
+real_TIME:89.95sec user_CPU:75.32sec sys_CPU:6.10sec max_RSS:52112kb swaps:0 ctx_sw:2053+1 nlines:808
+    run_try:5  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cp
+real_TIME:90.06sec user_CPU:75.20sec sys_CPU:6.62sec max_RSS:51240kb swaps:0 ctx_sw:3206+1 nlines:806
+    run_try:6  header:'C++ (optimized with -O2)' version:'g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4) '
+        src_file:primes.cp
 # ... compilation
 # ... run 1
-real_TIME:90.07sec user_CPU:76.08sec sys_CPU:5.54sec max_RSS:38376kb swaps:0 ctx_sw:4479+1 nlines:867 run_try:1  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.07sec user_CPU:76.08sec sys_CPU:5.54sec max_RSS:38376kb swaps:0 ctx_sw:4479+1 nlines:867
+    run_try:1  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
 # ... run 2
-real_TIME:90.00sec user_CPU:76.80sec sys_CPU:4.45sec max_RSS:38380kb swaps:0 ctx_sw:4232+1 nlines:871 run_try:2  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.00sec user_CPU:76.80sec sys_CPU:4.45sec max_RSS:38380kb swaps:0 ctx_sw:4232+1 nlines:871
+    run_try:2  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
 # ... run 3
-real_TIME:90.09sec user_CPU:77.09sec sys_CPU:4.52sec max_RSS:38380kb swaps:0 ctx_sw:4181+1 nlines:902 run_try:3  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.09sec user_CPU:77.09sec sys_CPU:4.52sec max_RSS:38380kb swaps:0 ctx_sw:4181+1 nlines:902
+    run_try:3  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
 # ... run 4
-real_TIME:90.05sec user_CPU:77.17sec sys_CPU:4.33sec max_RSS:38384kb swaps:0 ctx_sw:4192+1 nlines:895 run_try:4  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.05sec user_CPU:77.17sec sys_CPU:4.33sec max_RSS:38384kb swaps:0 ctx_sw:4192+1 nlines:895
+    run_try:4  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
 # ... run 5
-real_TIME:90.12sec user_CPU:77.15sec sys_CPU:4.52sec max_RSS:39312kb swaps:0 ctx_sw:3902+1 nlines:904 run_try:5  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.12sec user_CPU:77.15sec sys_CPU:4.52sec max_RSS:39312kb swaps:0 ctx_sw:3902+1 nlines:904
+    run_try:5  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
 # ... run 6
-real_TIME:90.06sec user_CPU:77.28sec sys_CPU:4.35sec max_RSS:39932kb swaps:0 ctx_sw:3477+1 nlines:900 run_try:6  header:'Rust' version:'rustc 1.12.0 (3191fbae9
- 2016-09-23) ' src_file:primes.rs
+real_TIME:90.06sec user_CPU:77.28sec sys_CPU:4.35sec max_RSS:39932kb swaps:0 ctx_sw:3477+1 nlines:900
+    run_try:6  header:'Rust' version:'rustc 1.12.0 (3191fbae9 2016-09-23) ' src_file:primes.rs
+
 ```
 
-Some analysis:  
+Some analysis:
+```bash
+
+ ndenev> ~ > awk '/primes.rs/ { print $7 }' test.txt | cut -d : -f 2 > rust.txt
+ ndenev> ~ > awk '/primes.cpp/ { print $7 }' test.txt | cut -d : -f 2 > cpp.txt
+ ndenev> ~ > ministat -s -w 60 cpp.txt rust.txt
 ```
- ndenev> ~ > langs-performance(branch:master) > awk '/primes.rs/ { print $7 }' test.txt | cut -d : -f 2 > rust.txt
- ndenev> ~ > langs-performance(branch:master) > awk '/primes.cpp/ { print $7 }' test.txt | cut -d : -f 2 > cpp.txt
- ndenev> ~ > langs-performance(branch:master) > ministat -s -w 60 cpp.txt rust.txt
+```txt
 x cpp.txt
 + rust.txt
 +------------------------------------------------------------+
@@ -84,7 +91,8 @@ Difference at 95.0% confidence
         10.1961% +/- 1.88238%
         (Student's t, pooled s = 11.8167)
  ndenev> ~ > langs-performance(branch:master) >
-```
+
+ ```
 
 
 Yup, Rust is 10% faster than C++ and uses less memory!  
