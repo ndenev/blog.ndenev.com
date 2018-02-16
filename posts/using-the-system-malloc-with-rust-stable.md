@@ -1,9 +1,9 @@
 title: Reducing stable Rust memory footprint by using the system malloc
-published_date: "2018-02-16 05:19:00 +0000"
+published_date: "2018-02-16 12:29:05 +0000"
 layout: default.liquid
-is_draft: true
+is_draft: false
 data:
-  short_title: using-the-system-malloc-with-rust-stable
+  short_title: "using-the-system-malloc-with-rust-stable"
 ---
 # Reducing stable Rust memory footprint by using the system malloc
 
