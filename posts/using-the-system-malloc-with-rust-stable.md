@@ -27,7 +27,7 @@ small (so far), and is written in Rust after all, so it should be fairly efficie
 To my surprise, after deploying I noticed a huge discrepancy in the memory utilization across the nodes
 :
 ```bash
-%> mpssh f k8s.stg.txt 'echo $(($(ps -C kube-canary --no-headers -orss) / 1024)) MB'
+%> mpssh f k8s.txt 'echo $(($(ps -C kube-canary --no-headers -orss) / 1024)) MB'
 MPSSH - Mass Parallel Ssh Ver.1.4-dev
 (c)2005-2013 Nikolay Denev <ndenev@gmail.com>
 
@@ -60,7 +60,7 @@ Then I decided to jump to the node with the most used memory, and after a brief 
 physical memory available and, most importantly highest count of CPU cores! Ok now, this might be it:
 
 ```shell
-%> mpssh -sf k8s.stg.txt nproc
+%> mpssh -sf k8s.txt nproc
 MPSSH - Mass Parallel Ssh Ver.1.4-dev
 (c)2005-2013 Nikolay Denev <ndenev@gmail.com>
 
@@ -108,7 +108,7 @@ opt.narenas (unsigned) r-
 A-ha, so jemalloc can cause higher memory utilization depending on the cores.
 That's the price for the higher performance and scalability, but I felt that's
 too much for my simple case.
-So, let's try to set the number of allocation arenas. This is easy, I just need to
+So, lets try to set the number of allocation arenas. This is easy, I just need to
 set an environment variable in the `DaemonSet` `spec.template.spec.containers`'s `env` list:
 
 ```json
@@ -207,7 +207,7 @@ index fb1a94d..d0094fe 100644
  CMD []
  ```
 
-Now, let's build and deploy this and see how it goes!
+Now, lets build and deploy this and see how it goes!
 
 ### Results
 
