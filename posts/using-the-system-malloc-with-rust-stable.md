@@ -240,7 +240,7 @@ MPSSH - Mass Parallel Ssh Ver.1.4-dev
 
  Here is also a graph of the average memory utilization for the `kube-canary` `Pod`s:
 
-![alt text](/posts/mem_graph.png "Memory Difference")
+![alt text](/posts/mem_graph.jpg "Memory Utilization")
 
 It starts high, around the middle I'm playing with various `jemalloc` settings like `opt.narenas` and at the very end, we see the graph drops even further.
 
@@ -249,6 +249,11 @@ It starts high, around the middle I'm playing with various `jemalloc` settings l
 It was fun playing with this and learning a thing or two in the process. I'm happy with the significantly reduced memory footprint, and I'm looking forward to seeing the `global_allocator` API in `-stable` someday,
 so that I don't have to use C (even though it's few lines)
 
+### Update 2018-02-18 09:54:05 +0000
+
+Further using avoiding `Clone` and using refs in a few places, and most importantly setting the `Shio` thread count to `4` (just picked 4, which should be sufficient for a prometheus scrape endpoint) instead of the default that is equal to the number of the CPU cores I got even lower memory utilization:
+
+![alt text](/posts/mem_graph2.jpg "Updated Memory Utilization")
 
 _Links:_
  1. My [tweet](https://twitter.com/ndenev/status/964018378368344065) about this.
